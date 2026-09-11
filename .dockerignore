@@ -1,0 +1,104 @@
+# ====================================================
+# Toolkit Pro - Docker Ignore File
+# ====================================================
+# এই ফাইলগুলো Docker Image-এ কপি হবে না
+# ====================================================
+
+# ---- Node.js ----
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- Environment ----
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ---- Git ----
+.git/
+.gitignore
+.gitattributes
+
+# ---- Documentation ----
+README.md
+docs/
+LICENSE
+CHANGELOG.md
+CONTRIBUTING.md
+
+# ---- Logs ----
+logs/
+*.log
+log/
+
+# ---- Tests ----
+coverage/
+.nyc_output/
+test/
+tests/
+__tests__/
+*.test.js
+*.spec.js
+
+# ---- IDE ----
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ---- Temporary ----
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+
+# ---- CI/CD ----
+.github/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+.jenkins/
+
+# ---- Docker ----
+Dockerfile
+.dockerignore
+docker-compose.yml
+docker-compose.override.yml
+.docker/
+
+# ---- Render.com ----
+render.yaml
+
+# ---- Cache ----
+.cache/
+.eslintcache
+.parcel-cache/
+.turbo/
+
+# ---- Uploads ----
+uploads/
+public/uploads/
+media/
+user-content/
+
+# ---- Misc ----
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+.cache
