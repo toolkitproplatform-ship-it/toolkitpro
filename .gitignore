@@ -1,0 +1,271 @@
+# ==============================================
+# Toolkit Pro - Git Ignore File
+# ==============================================
+# এই ফাইলগুলো GitHub-এ আপলোড হবে না
+# ==============================================
+
+# ----------------------------------------------
+# Node.js
+# ----------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm
+.yarn
+.pnp
+.pnp.js
+
+# ----------------------------------------------
+# Environment Variables
+# ----------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ----------------------------------------------
+# Logs
+# ----------------------------------------------
+logs/
+*.log
+log/
+tmp/
+temp/
+
+# ----------------------------------------------
+# Database
+# ----------------------------------------------
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+database/*.sql
+database/*.dump
+database/*.backup
+
+# ----------------------------------------------
+# Redis
+# ----------------------------------------------
+dump.rdb
+appendonly.aof
+redis-data/
+
+# ----------------------------------------------
+# OS Files
+# ----------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ----------------------------------------------
+# IDE & Editors
+# ----------------------------------------------
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+.project
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+
+# ----------------------------------------------
+# Testing & Coverage
+# ----------------------------------------------
+coverage/
+.nyc_output/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.jest/
+.jest-cache/
+junit.xml
+
+# ----------------------------------------------
+# Cache Files
+# ----------------------------------------------
+.cache/
+.eslintcache
+.stylelintcache
+.cache-loader/
+.parcel-cache/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+
+# ----------------------------------------------
+# Configuration Files (Sensitive)
+# ----------------------------------------------
+config.json
+config.local.json
+credentials.json
+serviceAccountKey.json
+firebase-admin.json
+.secrets/
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+
+# ----------------------------------------------
+# Uploads & Media
+# ----------------------------------------------
+uploads/
+public/uploads/
+storage/uploads/
+media/
+assets/uploads/
+user-content/
+temp-uploads/
+
+# ----------------------------------------------
+# Temporary Files
+# ----------------------------------------------
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+~lock.*
+
+# ----------------------------------------------
+# Compressed Files
+# ----------------------------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+*.gz
+*.bz2
+
+# ----------------------------------------------
+# Executables
+# ----------------------------------------------
+*.exe
+*.dll
+*.so
+*.dylib
+*.bin
+*.out
+*.app
+
+# ----------------------------------------------
+# Documentation Build
+# ----------------------------------------------
+docs/_build/
+docs/.doctrees/
+site/_site/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+
+# ----------------------------------------------
+# CI/CD
+# ----------------------------------------------
+.github/workflows/*.bak
+.gitlab-ci-local.yml
+.jenkins/
+.circleci/local*
+
+# ----------------------------------------------
+# Monitoring
+# ----------------------------------------------
+.newrelic/
+.sentry/
+.elasticbeanstalk/
+.serverless/
+.serverless/
+
+# ----------------------------------------------
+# Docker
+# ----------------------------------------------
+docker-compose.override.yml
+.docker/
+docker-data/
+
+# ----------------------------------------------
+# SSL Certificates
+# ----------------------------------------------
+ssl/
+certs/
+*.p12
+*.pfx
+
+# ----------------------------------------------
+# Render.com
+# ----------------------------------------------
+.rendered/
+render-cache/
+
+# ----------------------------------------------
+# Miscellaneous
+# ----------------------------------------------
+*.bak
+*.backup
+*.old
+*.orig
+*.rej
+*.pid
+*.seed
+*.pid.lock
+.vercel/
+.netlify/
+
+# ==============================================
+# নোটস (Notes):
+# ==============================================
+# 1. .env ফাইল কখনো পুশ করবেন না (পাসওয়ার্ড থাকে)
+# 2. node_modules/ কখনো পুশ করবেন না (অনেক ভারী)
+# 3. .env.example ফাইল পুশ করবেন (টেমপ্লেট হিসেবে)
+# 4. .vscode/settings.json পুশ করতে পারেন (টিম শেয়ারিং)
+# 5. SSL সার্টিফিকেট কখনো পুশ করবেন না
+# ==============================================
