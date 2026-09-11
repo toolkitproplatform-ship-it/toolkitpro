@@ -1,0 +1,143 @@
+{
+  "name": "toolkit-pro",
+  "version": "1.0.0",
+  "description": "Toolkit Pro - All-in-One Online Tools Platform with 2500+ Free Tools for students, developers, and content creators. 100% free, no signup required, and completely secure.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "debug": "node --inspect server.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "check": "npm run lint && npm run test",
+    "build": "echo 'No build step required for Node.js'",
+    "deploy": "git push origin main",
+    "logs": "render logs",
+    "health": "curl http://localhost:10000/health",
+    "db:migrate": "node database.js --migrate",
+    "db:seed": "node database.js --seed",
+    "db:reset": "node database.js --reset",
+    "cache:clear": "redis-cli FLUSHALL",
+    "monitor": "node --inspect server.js"
+  },
+  "keywords": [
+    "tools",
+    "online-tools",
+    "free-tools",
+    "utility",
+    "converter",
+    "calculator",
+    "developer-tools",
+    "seo-tools",
+    "image-tools",
+    "text-tools",
+    "saas",
+    "productivity",
+    "adsense"
+  ],
+  "author": "Toolkit Pro Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0",
+    "dotenv": "^16.0.3",
+    "pg": "^8.11.0",
+    "redis": "^4.6.0",
+    "jsonwebtoken": "^9.0.0",
+    "bcrypt": "^5.1.0",
+    "express-rate-limit": "^6.7.0",
+    "express-validator": "^7.0.1",
+    "uuid": "^9.0.0",
+    "axios": "^1.4.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.32.0",
+    "pdf-parse": "^1.1.1",
+    "csv-parse": "^5.4.0",
+    "xlsx": "^0.18.5",
+    "archiver": "^5.3.1",
+    "unzipper": "^0.10.14",
+    "qrcode": "^1.5.3",
+    "barcode": "^0.1.0",
+    "validator": "^13.9.0",
+    "moment": "^2.29.4",
+    "i18next": "^23.2.0",
+    "i18next-node-fs-backend": "^2.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.42.0",
+    "prettier": "^2.8.8",
+    "dotenv-cli": "^7.2.1",
+    "cross-env": "^7.0.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "routes/**/*.js",
+      "middleware/**/*.js",
+      "models/**/*.js",
+      "utils/**/*.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "no-undef": "error",
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"]
+    }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "printWidth": 80,
+    "arrowParens": "always"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/toolkit-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/toolkit-pro/issues"
+  },
+  "homepage": "https://toolkit-pro.onrender.com",
+  "funding": {
+    "type": "adsense",
+    "url": "https://adsense.google.com"
+  }
+}
